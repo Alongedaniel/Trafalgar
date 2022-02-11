@@ -78,6 +78,9 @@
   .nav-link {
     display: none;
   }
+  .navbar-container {
+    padding: .5rem 2vw 2em 2vw;
+  }
 }
 
 @media (min-width: 801px) {
@@ -87,6 +90,7 @@
 }
 
 .header-container {
+  max-width: 1400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,6 +105,7 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 0 10vw;
+  margin: 0 auto;
 }
 
 .header-container .header-left {
@@ -245,7 +250,8 @@
 }
 
 .section1 .section1-services .services .services-items p {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
+  opacity: 0.5;
 }
 
 .section1 .section1-services .services .firstchild {
@@ -268,6 +274,7 @@
 }
 
 .section2 {
+  max-width: 1400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -282,25 +289,27 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 3rem 10vw;
+  margin: 0 auto;
 }
 
-.section-right {
+.section2 .section-right {
   width: 50%;
   max-width: 350px;
+  margin-top: 3rem;
 }
 
-.section-right h1 {
+.section2 .section-right h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-.section-right p {
+.section2 .section-right p {
   font-size: 1.1rem;
   margin-bottom: 2rem;
   opacity: 0.5;
 }
 
-.section-right button {
+.section2 .section-right button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -316,14 +325,16 @@
   color: #458ff6;
   background-color: #ffffff;
   border-color: #458ff6;
-  margin: 0 auto;
 }
 
-.section-right .download-icon {
-  margin-left: 0.5rem;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+.section-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .section-left img {
@@ -357,6 +368,7 @@
 }
 
 .section3 {
+  max-width: 1400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -371,6 +383,50 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 3rem 10vw;
+  margin: 0 auto 6rem auto;
+}
+
+.section3 .section-right {
+  width: 50%;
+  max-width: 350px;
+  margin-top: 3rem;
+}
+
+.section3 .section-right h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.section3 .section-right p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.5;
+}
+
+.section3 .section-right button {
+  max-width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.7rem 2rem;
+  border-radius: 2rem;
+  color: #458ff6;
+  background-color: #ffffff;
+  border-color: #458ff6;
+}
+
+.section3 .section-right .download-icon {
+  margin-left: 0.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 @media (max-width: 1095px) {
@@ -380,10 +436,13 @@
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
+  button {
+    margin: 0 auto;
+  }
 }
 
 .reviews {
-  max-width: 850px;
+  max-width: 1100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -394,10 +453,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 3rem 1.5rem;
-  background-color: #458ff6;
-  border-radius: 1rem;
-  margin: 0 auto 5rem auto;
+  padding: 4rem 1.5rem;
+  background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+  border-radius: 24px;
+  margin: 0 auto;
 }
 
 .reviews .review-top {
@@ -412,6 +471,7 @@
       -ms-flex-align: center;
           align-items: center;
   color: #fff;
+  margin-bottom: 2.4rem;
 }
 
 .reviews .border {
@@ -433,9 +493,8 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 0 3rem;
 }
 
@@ -478,11 +537,6 @@
   font-size: 0.9rem;
 }
 
-.reviews .comments .customer-details .text-section .customer-occupation {
-  font-size: 0.1rem;
-  opacity: 0.5;
-}
-
 @media (max-width: 700px) {
   .comments {
     -webkit-box-orient: vertical !important;
@@ -501,8 +555,14 @@
   }
 }
 
+@media (max-width: 1103px) {
+  .reviews {
+    border-radius: 0;
+  }
+}
+
 .articles {
-  padding: 3rem 5vw;
+  padding: 3rem 10vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -530,7 +590,7 @@
 }
 
 .articles .story-list {
-  max-width: 850px;
+  max-width: 1400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -549,9 +609,13 @@
 }
 
 .articles .story-text {
+  max-width: 850px;
+  height: 400px;
   background-color: rgba(255, 255, 255, 0.205);
   -webkit-box-shadow: 10px 10px 5px #e5e9f666;
           box-shadow: 10px 10px 5px #e5e9f666;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
 .articles .story-image {
@@ -577,6 +641,7 @@
   color: #458ff6;
   text-decoration: none;
   padding: 0 1rem;
+  padding-bottom: 2rem;
 }
 
 .articles .read-more-icon {
@@ -609,6 +674,9 @@
     margin-bottom: 3rem;
     max-width: 300px !important;
   }
+  .story-text {
+    height: 390px !important;
+  }
 }
 
 .footer-container {
@@ -631,7 +699,7 @@
   min-height: 300px;
 }
 
-.footer-container .left-side {
+.footer-container .footer-left-side {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -662,7 +730,7 @@
   height: 40px;
 }
 
-.footer-container .right-side {
+.footer-container .footer-right-side {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -698,7 +766,7 @@
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  .right-side {
+  .footer-right-side {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -712,14 +780,14 @@
   .footer-header {
     margin-top: 1.5rem !important;
   }
-  .left-side {
+  .footer-left-side {
     width: 100%;
     margin: 0 auto;
   }
 }
 
 @media (max-width: 537px) {
-  .right-side {
+  .footer-right-side {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
