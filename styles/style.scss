@@ -551,3 +551,15 @@
     flex-direction: column;
   }
 }
+.author{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+  padding-top: 3rem;
+  color: black;
+}
+.author-name{
+  margin-left: .5rem;
+
+}
