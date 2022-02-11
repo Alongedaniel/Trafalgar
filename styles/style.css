@@ -596,14 +596,16 @@
 
 .articles .story {
   max-width: 30%;
+  -webkit-box-shadow: 5px 5px 10px 10px #e5e9f666;
+          box-shadow: 5px 5px 10px 10px #e5e9f666;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 
 .articles .story-text {
   max-width: 850px;
   height: 400px;
   background-color: rgba(255, 255, 255, 0.205);
-  -webkit-box-shadow: 10px 10px 5px #e5e9f666;
-          box-shadow: 10px 10px 5px #e5e9f666;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
