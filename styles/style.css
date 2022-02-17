@@ -608,6 +608,8 @@
   max-width: 850px;
   height: 400px;
   background-color: rgba(255, 255, 255, 0.205);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
 .articles .story-image {
